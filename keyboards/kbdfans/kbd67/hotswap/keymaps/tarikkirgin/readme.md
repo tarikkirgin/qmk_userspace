@@ -1,1 +1,3 @@
-# The default keymap for hotswap
+# tarikkirgin
+
+A fairly minimal layout.
