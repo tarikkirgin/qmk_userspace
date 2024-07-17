@@ -35,9 +35,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case KC_RHYPR:
             if (record->event.pressed) {
-                register_mods(MOD_BIT(KC_RCTL) | MOD_BIT(KC_RSHIFT) | MOD_BIT(KC_RALT) | MOD_BIT(KC_RGUI));
+                register_mods(MOD_BIT(KC_RCTL) | MOD_BIT(KC_RSFT) | MOD_BIT(KC_RALT) | MOD_BIT(KC_RGUI));
             } else {
-                unregister_mods(MOD_BIT(KC_RCTL) | MOD_BIT(KC_RSHIFT) | MOD_BIT(KC_RALT) | MOD_BIT(KC_RGUI));
+                unregister_mods(MOD_BIT(KC_RCTL) | MOD_BIT(KC_RSFT) | MOD_BIT(KC_RALT) | MOD_BIT(KC_RGUI));
             }
             return false;
     }
