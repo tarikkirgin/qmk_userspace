@@ -4,11 +4,6 @@
 #define _______ KC_TRNS
 #define RHYP_T(kc) MT(MOD_RCTL | MOD_RSFT | MOD_RALT | MOD_RGUI, kc)
 
-const uint16_t PROGMEM both_shifts[] = {KC_LSFT, KC_RSFT, COMBO_END};
-combo_t key_combos[] = {
-    COMBO(both_shifts, KC_CAPS),
-};
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [0] = LAYOUT(
   KC_ESC,  KC_1,    KC_2,   KC_3,   KC_4,   KC_5,   KC_6,   KC_7,   KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,  KC_BSLS, KC_GRV,  KC_PSCR,
