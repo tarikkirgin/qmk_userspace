@@ -56,13 +56,11 @@ bool process_detected_host_os_kb(os_variant_t detected_os) {
         case OS_WINDOWS:
         case OS_LINUX:
         case OS_UNSURE:
-            keymap_config.swap_lctl_lgui = keymap_config.swap_rctl_rgui = false;
             default_layer_set(1UL << _DEFAULT);
             break;
 
         case OS_MACOS:
         case OS_IOS:
-            keymap_config.swap_lctl_lgui = keymap_config.swap_rctl_rgui = true;
             default_layer_set(1UL << _MAC);
             break;
     }
